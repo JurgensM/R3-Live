@@ -94,6 +94,7 @@ body {
   justify-content: space-around;
   -webkit-box-align: center;
         align-items: center;
+        z-index: 2;
 }
 
 .container.scrolling {
@@ -269,7 +270,7 @@ body {
   position: relative;
   top: 2em;
   font-family: 'Lato', sans-serif;
-  font-size: 23px;
+  font-size: 18px;
   color: white;
   text-align: center;
   max-width: 50rem;
@@ -280,12 +281,13 @@ body {
   position: relative;
   top: 5em;
   font-family: 'Lato', sans-serif;
-  font-size: 23px;
+  font-size: 18px;
   color: white;
   text-align: center;
   max-width: 55rem;
   margin: 0 auto;
 }
+
 
 
 
