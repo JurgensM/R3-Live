@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Accordion</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Sen&amp;display=swap'>
+    <link rel="stylesheet" href="./style.css"> 
     <link
     rel="stylesheet"
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
   />
+
 </head>
 
 <body>
@@ -20,12 +22,12 @@
             <div class="bar3"></div>
         </div>
         <div class="logo">
-            <img id="logo" src="images/logo-r3.png" alt="Logo">
+            <img id="logo" src="images/logo_lungo.png" alt="Logo">
         </div>
             <a href="#1" class="item">ESTATE</a>
             <a href="#2" class="item">CONCIERGE</a>
             <a href="#3" class="item">RENOVATIONS</a>
-            <a href="#4" class="item" id="hidden">HIDDEN</a>
+            <a href="#4" class="item">VLOG</a>
             <a href="#5" class="item">CHI SIAMO</a>
             <a href="#6" class="item">CONTATTI</a>
         </div>
@@ -108,7 +110,7 @@
             </div>
         </div>
 
-        <div class="container-mobile">
+        <div class="estate-mobile">
         </div>
             <div class="box-mobile">
                 <h1 class="h1-mobile">ESTATE</h1>
@@ -118,8 +120,8 @@
     </section>
 
     <section class="section">
-        <div class="container-estate-2">
-            <img src="images/estate.jpg" alt="estate" class="estate-img-2">
+        <div class="container-estate">
+            <img src="images/concierge.jpg" alt="estate" class="estate-img2">
             <div class="box-2">
                 <h1 class="estate-h1">CONCIERGE</h1>
                 <div class="separator-3">
@@ -131,7 +133,7 @@
             </div>
         </div>
 
-        <div class="container-mobile">
+        <div class="concierge-mobile">
         </div>
             <div class="box-mobile">
                 <h1 class="h1-mobile">CONCIERGE</h1>
@@ -142,7 +144,7 @@
 
     <section class="section">
         <div class="container-estate">
-            <img src="images/estate.jpg" alt="estate" class="estate-img">
+            <img src="images/renovations.jpg" alt="estate" class="estate-img">
             <div class="box-1">
                 <h1 class="estate-h1">RENOVATIONS</h1>
                 <div class="separator-3">
@@ -154,7 +156,7 @@
             </div>
         </div>
 
-        <div class="container-mobile">
+        <div class="renovations-mobile">
         </div>
             <div class="box-mobile">
                 <h1 class="h1-mobile">RENOVATIONS</h1>
@@ -162,13 +164,12 @@
             </div>
         
     </section>
-   
 
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="images/house.png" alt=""></div>
-          <div class="swiper-slide"><img src="images/house.png" alt=""></div>
-          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide"><img src="images/renovations.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/casa.png" alt=""></div>
+          <div class="swiper-slide">concierge</div>
           
         </div>
 
@@ -182,10 +183,13 @@
      
     
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+   
+
 
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

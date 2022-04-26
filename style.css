@@ -14,7 +14,7 @@ body {
   justify-content: space-around;
   -webkit-box-align: center;
         align-items: center;
-  z-index: 4;
+  z-index: 999;
 }
 
 .container.scrolling {
@@ -29,7 +29,7 @@ body {
 .home {
   width: 100%;
   height: 100vh;
-  background-image: url(images/house.png);
+  background-image: url(images/copertina4.jpg);
   background-position: center top;
   background-size:cover;
 }
@@ -61,12 +61,8 @@ body {
                       order: 2;
 }
 
-#hidden {
-  visibility: hidden;
-}
-
 .background-logo {
-  background-image: url(images/sfondo-logo.png);
+  background-image: url(images/sfondodo.jpg);
   width: 100%;
   height: 100vh;
   background-position: center top;
@@ -186,139 +182,7 @@ body {
   color: white;
 }
 
-.separator-3{
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.separator-3 .line{
-  height: 3px;
-  flex: 0.2;
-  background-color: white;
-}
-
-.estate-h1 {
-  font-size: 50px;
-  margin-bottom: 3%;
-}
-
-.container-mobile {
-  visibility: hidden;
-}
-
-
-
-/************************************************
-IMPOSSIBILE MA CE LA FAREMO AD ADATTARLO QUESTO MERDOSISSIMO SLIDER
-***************************************************/
-/* html,
-body {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  font-family: "Sen";
-}
-* {
-  box-sizing: border-box;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  cursor: none;
-  user-select: none;
-  -webkit-user-drag: none;
-} 
-#main {
-  display: flex;
-}
-#main .part {
-  flex: 1;
-}
-#main .part .section {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-#main .part .section img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: absolute;
-  left: var(--x);
-  pointer-events: none;
-}
-.cursor {
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  background: white;
-  position: absolute;
-  z-index: 999;
-  pointer-events: none;
-  mix-blend-mode: difference;
-}
-.cursor-f {
-  width: var(--size);
-  height: var(--size);
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='47' height='47' viewBox='0 0 47 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M42.4202 42.4202C38.8403 46 33.3594 46 23.5 46C13.6406 46 8.15966 46 4.57983 42.4202C1 38.8403 1 33.3594 1 23.5C1 13.6406 1 8.15966 4.57983 4.57983C8.15966 1 13.6406 1 23.5 1C33.3594 1 38.8403 1 42.4202 4.57983C46 8.15966 46 13.6406 46 23.5C46 33.3594 46 38.8403 42.4202 42.4202Z' stroke='white'/%3E%3C/svg%3E%0A");
-  background-size: cover;
-  mix-blend-mode: difference;
-  pointer-events: none;
-  opacity: 0.5;
-}
-.buttons {
-  position: absolute;
-  right: 25px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 99;
-}
-.buttons button {
-  border: none;
-  background-size: contain;
-  background: url("data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A") no-repeat;
-  background-position: center;
-  width: 10px;
-  height: 30px;
-  display: block;
-  margin: 20px 0;
-  padding: 0 15px;
-  transition-duration: 0.6s;
-}
-.buttons button.next {
-  transform: scaleY(-1);
-}
-.buttons button.prev:active {
-  transform: translateY(8px);
-}
-.buttons button.next:active {
-  transform: scaleY(-1) translateY(8px);
-}
-.titolone {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 99;
-  color: white;
-  text-align: center;
-  font-size: 2.6em;
-  mix-blend-mode: overlay;
-  pointer-events: none;
-}
-*/
-.container-estate-2 {
-  position: absolute;
-  width: 100%;
-  height: auto;
-}
-
-.estate-img-2 {
+.estate-img2 {
   position: relative;
   left: 30%;
   /* height: 75%; */
@@ -341,6 +205,27 @@ body {
   background-color: rgba(0, 0, 0, .8);
   color: white;
 }
+.separator-3{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.separator-3 .line{
+  height: 3px;
+  flex: 0.2;
+  background-color: white;
+}
+
+.estate-h1 {
+  font-size: 50px;
+  margin-bottom: 3%;
+}
+
+.container-mobile {
+  visibility: hidden;
+}
+
 
 @media all and (max-width: 1180px) {
   .container {
@@ -366,6 +251,8 @@ body {
 
   .hamburger {
     display: inline-block;
+    position: absolute;
+    top: 30px;
     cursor: pointer;
   }
       
@@ -418,7 +305,7 @@ body {
     display: none;
   }
 
-  .container-mobile{
+  .estate-mobile{
     visibility: visible;
     position: absolute;
     width: 100%;
@@ -427,6 +314,30 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(images/estate.jpg);
+    opacity: 0.50;
+  }
+
+  .concierge-mobile{
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/concierge.jpg);
+    opacity: 0.50;
+  }
+
+  .renovations-mobile{
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/renovations.jpg);
     opacity: 0.50;
   }
 
@@ -460,6 +371,12 @@ body {
   }
 }
 
+@media all and (max-width: 400px) {
+  .second-desc {
+    visibility: hidden;
+  }
+}
+
 .swiper{
   width: 100%;
   height: 80vh;
@@ -469,7 +386,7 @@ body {
   background-color: #fff;
 }
 
-.swiper-slide {
+.swiper-slide img{
   width: 100%;
   height: fit-content;
   text-align: center;
