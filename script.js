@@ -21,3 +21,23 @@ $(window).scroll(function() {
       $(".container").removeClass("scrolling");
   }
 });
+
+var swiper = new Swiper(".mySwiper", {
+  autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+  },
+loop: true,
+
+direction: "vertical",
+pagination: {
+  el: ".swiper-pagination",
+  clickable: true,
+},
+
+navigation: {
+    nextEl: 'swiper-button-next',
+    prevEl: '.swiper-button-prev',
+},
+
+});

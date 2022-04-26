@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Accordion</title>
     <link rel="stylesheet" href="style.css"> 
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
 </head>
 
 <body>
@@ -160,29 +164,28 @@
     </section>
    
 
-
-
-
-
-
-
-    <!-- -------------------------------------------
-        IMPOSSIBILE MA CE LA FAREMO AD ADATTARLO QUESTO MERDOSISSIMO SLIDER
-    --------------------------------------------------->
-
-        <!-- <div id="main">
-            <h1 class="titolone">something</h1>
-            <div class="buttons">
-                <button class="next" onclick="go(-1)"></button>
-                <button class="prev" onclick="go(1)"></button>
-            </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/house.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/house.png" alt=""></div>
+          <div class="swiper-slide">Slide 3</div>
+          
         </div>
-  -->
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+
      
     
-    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="script.js"></script>
+
+    
 </body>
 
 </html>
