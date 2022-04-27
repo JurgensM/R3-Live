@@ -29,6 +29,9 @@ var swiper = new Swiper(".mySwiper", {
 loop: true,
 
 direction: "vertical",
+
+effect: 'cube',
+
 pagination: {
   el: ".swiper-pagination",
   clickable: true,
@@ -40,3 +43,4 @@ navigation: {
 },
 
 });
+
