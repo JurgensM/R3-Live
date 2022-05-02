@@ -337,12 +337,14 @@ body {
 /*                                  FOOTER                                 */
 /***************************************************************************/
 .site-footer {
+  height: 40vh;
   background-color: black;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
   color:white;
   font-family: 'Lato', sans-serif;
+  z-index: 2;
 }
 
 .riga {
@@ -433,6 +435,7 @@ svg {
   place-items: center;
   color: #ffffff;
   font-family: 'Lato', sans-serif;
+  z-index: 2;
 }
 
 /***************************************************************************/

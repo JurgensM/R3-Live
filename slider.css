@@ -6,8 +6,12 @@
   }
   
 
-.home {
-    background-image: url(images/copertina1.jpg);
+.home-2 {
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/copertina1.jpg);
+	background-position: center top;
+	background-size:cover;
 }
 .about-it{
 	width: 100%;
@@ -45,7 +49,7 @@
 /* CARDS  */
 .page-content {
 	display: grid;
-	grid-gap: 3rem;
+	grid-gap: .5rem;
 	padding: 1rem;
 	max-width: 1024px;
 	margin: 0 auto;
@@ -66,7 +70,7 @@
 	display: flex;
 	align-items: flex-end;
 	overflow: hidden;
-	padding: 1rem;
+	/* padding: 1rem; */
 	width: 100%;
 	text-align: center;
 	color: whitesmoke;
