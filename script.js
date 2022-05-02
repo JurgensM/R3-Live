@@ -15,6 +15,27 @@ $(document).ready(function() {
   
 });
 
+// change logo color when the navbar is black
+window.addEventListener("scroll", (event) => {
+  let scrollY = this.scrollY;
+
+  if (scrollY >= 100){
+    $("#logo").css({
+      "display": "none",
+    });
+    $("#logo-white").css({
+      "display": "inline",
+    });
+  } else if (scrollY < 100 || scrollY == 0){
+      $("#logo-white").css({
+        "display": "none",
+      });
+      $("#logo").css({
+        "display": "inline",
+      });
+    }
+});
+
 
 
 

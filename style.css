@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
-/* Preloader */
+
+/***************************************************************************/
+/*                                  PRELOADER                              */
+/***************************************************************************/
 .no-scroll-y {
 	overflow-y: hidden;
 }
@@ -31,7 +34,7 @@
   width: calc(50% + 1px);
 }
 
-/* posizionamento sezioni da aprire */
+/* positioning section to open */
 .ctn-preloader .loader-section.section-left {
   left: 0;
 }
@@ -40,14 +43,13 @@
   right: 0;
 }
 
-
-/* opacizzazione immagine */
+/* image matting */
 .loaded .animation-preloader {
   opacity: 0;
   transition: 0.3s ease-out;
 }
 
-/* effetto apertura a tenda */
+/* courtain opening */
 .loaded .loader-section.section-left {
   transform: translateX(-101%);
   transition: 0.5s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
@@ -58,13 +60,15 @@
   transition: 0.5s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
 }
 
-
 body {
   padding: 0;
   margin: 0;
   background-color:black;
 }
 
+/***************************************************************************/
+/*                                  NAVBAR                                 */
+/***************************************************************************/
 .container {
   position: fixed;
   width: 100%;
@@ -81,19 +85,12 @@ body {
   color: white;
 }
 
+/* hamburger menù */
 .hamburger {
   display: none;
 }
 
-.home {
-  width: 100%;
-  height: 100vh;
-  background-image: url(images/copertina4.jpg);
-  background-position: center top;
-  background-size:cover;
-}
-
-
+/* logo */
 .logo {
   -webkit-box-ordinal-group: 2;
                       order: 1;
@@ -103,12 +100,25 @@ body {
   padding: 10px;
 }
 
+/* white logo */
+#logo-white {
+  display: none;
+}
+
+/* navbar items */
 .item {
   color: rgba(255, 255, 255, 0.88);
   text-decoration: none;
   font-family: 'Lato';
   padding: 24px;
 } 
+
+.item-logo {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  font-family: 'Lato';
+  padding: 24px;
+}
 
 .item:hover {
   color: #fff;
@@ -120,6 +130,21 @@ body {
                       order: 2;
 }
 
+/***************************************************************************/
+/*                             HOME IMAGE COVER                            */
+/***************************************************************************/
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/copertina4.jpg);
+  background-position: center top;
+  background-size:cover;
+}
+
+
+/***************************************************************************/
+/*                            BACKGROUND LOGO                              */
+/***************************************************************************/
 .background-logo {
   background-image: url(images/sfondodo.jpg);
   width: 100%;
@@ -129,11 +154,13 @@ body {
   background-repeat: no-repeat;
 
 }
+
 .container-sec{
   position: absolute;
   width: 100%;
 }
 
+/* line separator */
 .separator{
   display:flex;
   align-items: center;
@@ -146,15 +173,18 @@ body {
   background-color: white;
 }
 
+/* font for the text sections */
 .font {
   font-family: 'Lato', sans-serif;
   font-size: 30px;
 }
+
 .separator .thinked{
   padding: 0 2rem;
   color: white;
 }
 
+/* text sections */
 .first-desc {
   position: relative;
   top: 2em;
@@ -184,6 +214,7 @@ body {
   overflow: hidden;
 }
 
+/* second title and line */
 .separator-2 .line{
   height: 3px;
   flex: 0.5;
@@ -196,6 +227,7 @@ body {
   overflow: hidden;
 }
 
+/* text section after title */
 .third-desc {
   position: relative;
   top: 2em;
@@ -207,6 +239,9 @@ body {
   margin: 0 auto;
 }
 
+/***************************************************************************/
+/*                       ESTATE, CONCIERGE, RENOVATIONS                    */
+/***************************************************************************/
 .section {
   height: 45em;
 }
@@ -217,6 +252,7 @@ body {
   height: auto;
 }
 
+/* estate image */
 .estate-img {
   position: relative;
   left: 1%;
@@ -226,6 +262,7 @@ body {
   height: auto;
 }
 
+/* estate and renovations black box for text on image */
 .box-1{
   font-family: 'Lato', sans-serif;
   position: absolute;
@@ -241,6 +278,7 @@ body {
   color: white;
 }
 
+/* concierge image */
 .estate-img2 {
   position: relative;
   left: 30%;
@@ -250,6 +288,7 @@ body {
   height: auto;
 }
 
+/* concierge black box for text, inverted */
 .box-2{
   font-family: 'Lato', sans-serif;
   position: absolute;
@@ -264,6 +303,8 @@ body {
   background-color: rgba(0, 0, 0, .8);
   color: white;
 }
+
+/* line separators */
 .separator-3{
   display: flex;
   align-items: center;
@@ -276,17 +317,140 @@ body {
   background-color: white;
 }
 
+/* sections titles estate, concierge, renovations */
 .estate-h1 {
   font-size: 50px;
   margin-bottom: 3%;
 }
 
+.estate-h1 a{
+  text-decoration: none;
+  color: white;
+}
+
+/* container mobile version */
 .container-mobile {
   visibility: hidden;
 }
 
+/***************************************************************************/
+/*                                  FOOTER                                 */
+/***************************************************************************/
+.site-footer {
+  background-color: black;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:white;
+  font-family: 'Lato', sans-serif;
+}
 
+.riga {
+  text-align: center;
+}
+
+#colon {
+  display: inline-table;
+  padding: 4%;
+}
+
+#logo-foot {
+  width: 70%;
+}
+
+.site-footer h6 {
+  color:white;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+
+/* elements in the colons */
+.footer-links {
+  padding-left:0;
+  list-style:none;
+  color: white;
+}
+
+/* social icons */
+svg {
+  width: 15px;
+  height: 15px;
+}
+
+.site-footer {
+  padding-bottom:0
+}
+
+.social-icons {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none;
+} 
+
+.social-icons li {
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+/* social icons color when hover */
+.social-icons a.facebook:hover
+{
+  background-color:#790405
+}
+.social-icons a.twitter:hover
+{
+  background-color:#B18904
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#343567;
+}
+
+/*second footer */
+.footer2 {
+  width: 100%;
+  height: 4em;
+  text-align: center;
+  background-color: black;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+}
+
+/***************************************************************************/
+/*                             MEDIA FOR 1480PX                            */
+/***************************************************************************/
+@media all and (max-width: 1480px) {
+  /* footer responsive */
+  #colon {
+    display: inline-table;
+    padding: 2.5%;
+  }  
+}
+
+/***************************************************************************/
+/*                             MEDIA FOR 1180PX                            */
+/***************************************************************************/
 @media all and (max-width: 1180px) {
+  /* navbar responsive */
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -296,6 +460,7 @@ body {
     background-color: black;
   }
 
+  /* logo in navbar responsive */
   .logo {
     height: 80px;
   }    
@@ -305,16 +470,21 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60%;
-    width: 50%;
+    width: 30%; 
   }
 
+  #logo-white {
+    width: 30%;
+  }
+
+  /* hamburger menù and bars */
   .hamburger {
     display: inline-block;
     position: absolute;
     top: 30px;
     cursor: pointer;
   }
-      
+    
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -322,7 +492,8 @@ body {
     margin: 6px 0;
     transition: 0.4s;
   }
-      
+  
+  /* hamburger transition */
   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
@@ -345,6 +516,7 @@ body {
     margin: auto auto;
   }
 
+  /* navbar items */
   .item {
     text-align: center;
     border-bottom: 1px solid #111;
@@ -360,6 +532,7 @@ body {
     visibility: hidden;
   }
 
+  /* estate, concierge, renovations responsive */
   .container-estate{
     display: none;
   }
@@ -418,9 +591,36 @@ body {
   .section{
     height: 30em;
   }
+  
+  /* footer responsive */
+  #colon {
+    display:list-item;
+    padding: 2%;
+  }
+
+  #logo-foot{
+    visibility: hidden;
+    display: none;
+  }
+  
+  .social-icons a.facebook {
+    background-color:#790405
+  }
+  .social-icons a.twitter {
+    background-color:#B18904
+  }
+  .social-icons a.linkedin {
+    background-color:#343567;
+  }
+ 
+  
 }
 
+/***************************************************************************/
+/*                             MEDIA FOR 700PX                             */
+/***************************************************************************/
 @media all and (max-width: 700px) {
+  /* text sections deleted in mobile */
   .separator-2 {
     visibility: hidden;
   }
@@ -430,32 +630,16 @@ body {
   }
 }
 
+/***************************************************************************/
+/*                             MEDIA FOR 400PX                             */
+/***************************************************************************/
 @media all and (max-width: 400px) {
+  /* section with background responsive */
   .second-desc {
     visibility: hidden;
   }
+  /* logo footer responsive */
+  #logo-foot{
+    width: 50%;
+  }
 }
-
-.swiper{
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #111;
-}
-
-.swiper-slide img{
-  width: 100%;
-  height: auto;
-  
-}
-
-.swiper .swiper-pagination-bullet-active {
-  background: #111;
-}
-
-.swiper-wrapper {
-  position: relative;
-}
-
