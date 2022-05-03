@@ -146,7 +146,7 @@ body {
 /*                            BACKGROUND LOGO                              */
 /***************************************************************************/
 .background-logo {
-  background-image: url(images/sfondodo.jpg);
+  background-image: url(images/sfondo_logo.png);
   width: 100%;
   height: 100vh;
   background-position: center top;
@@ -334,17 +334,69 @@ body {
 }
 
 /***************************************************************************/
+/*                                  SLIDER REVIEWS                         */
+/***************************************************************************/
+
+.slider__caption {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  opacity: .5;
+  font-family: 'Lato';
+}
+
+.slider__txt {
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Lato';
+  color: #fff;
+}
+
+quote {
+  font-family: 'Lato';
+  font-size: 100px;
+  color: #B18904;
+  margin-bottom: 0;
+}
+
+.slider {
+  background-image: url(images/copertina1.jpg);
+  background-size: auto;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 600px;
+}
+
+.slideshow {
+  position: relative;
+  height: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  color:#ddd;
+  text-align: center;
+  font-family: 'Lato';
+  position: absolute;
+  top: 25%;
+}
+
+.slide { 
+  display: none;
+}
+
+/***************************************************************************/
 /*                                  FOOTER                                 */
 /***************************************************************************/
 .site-footer {
-  height: 40vh;
   background-color: black;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
   color:white;
   font-family: 'Lato', sans-serif;
-  z-index: 2;
 }
 
 .riga {
@@ -435,7 +487,6 @@ svg {
   place-items: center;
   color: #ffffff;
   font-family: 'Lato', sans-serif;
-  z-index: 2;
 }
 
 /***************************************************************************/
@@ -533,6 +584,10 @@ svg {
   #hidden{
     display: none;
     visibility: hidden;
+  }
+
+  .home {
+    height: 500px;
   }
 
   /* estate, concierge, renovations responsive */
