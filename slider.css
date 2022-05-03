@@ -7,12 +7,28 @@
   
 
 .home-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	height: 100vh;
 	background-image: url(images/copertina1.jpg);
 	background-position: center top;
 	background-size:cover;
+	text-align: center;
+	vertical-align: middle;
 }
+
+.estate-title{
+	font-family: 'Lato', sans-serif;
+	width: 10em;
+	align-items: center;
+	font-size: xx-large;color: white;
+	background-color: rgba(0, 0, 0, .7);
+
+
+}
+
 .about-it{
 	width: 100%;
 	height: 100%;
@@ -49,7 +65,7 @@
 /* CARDS  */
 .page-content {
 	display: grid;
-	grid-gap: .5rem;
+	grid-gap: 3rem;
 	padding: 1rem;
 	max-width: 1024px;
 	margin: 0 auto;
@@ -71,7 +87,7 @@
 	align-items: flex-end;
 	overflow: hidden;
 	/* padding: 1rem; */
-	width: 100%;
+	width: 110%;
 	text-align: center;
 	color: whitesmoke;
 	background-color: whitesmoke;
