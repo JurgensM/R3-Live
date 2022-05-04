@@ -3,31 +3,27 @@
 	--e: cubic-bezier(0.19, 1, 0.22, 1);
 	--font-sans: 'Rubik', sans-serif;
 	--font-serif: 'Cardo', serif;
-  }
-  
+}
 
 .home-2 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100vh;
-	background-image: url(images/copertina1.jpg);
-	background-position: center top;
-	background-size:cover;
-	text-align: center;
-	vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/copertina1.jpg);
+    background-position: center top;
+    background-size:cover;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .estate-title{
-	font-family: 'Lato', sans-serif;
-	width: 10em;
-	align-items: center;
-	font-size: xx-large;
-	color: white;
-	background-color: rgba(0, 0, 0, .7);
-
-
+    font-family: 'Lato', sans-serif;
+    width: 10em;
+    align-items: center;
+    font-size: xx-large;color: white;
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .about-it{
@@ -35,6 +31,7 @@
 	height: 100%;
 	max-height: 100vh;
 }
+
 .about-it-container {
 	position: absolute;
 	width: 100%;
@@ -67,8 +64,8 @@
 .page-content {
 	display: grid;
 	grid-gap: 3rem;
+	max-width: 80%;
 	padding: 1rem;
-	max-width: 1024px;
 	margin: 0 auto;
 	font-family:  'Lato', sans-serif;
 }
@@ -87,8 +84,7 @@
 	display: flex;
 	align-items: flex-end;
 	overflow: hidden;
-	/* padding: 1rem; */
-	width: 110%;
+	width: 100%;
 	text-align: center;
 	color: whitesmoke;
 	background-color: whitesmoke;
@@ -117,7 +113,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 110%;
 	height: 200%;
 	pointer-events: none;
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
@@ -125,16 +121,16 @@
 	transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-	background-image: url(images/casa.jpg);
+	background-image: url(images/card1.jpg);
 }
 .card:nth-child(2):before {
-	background-image: url(images/concierge.jpg);
+	background-image: url(images/card2.jpg);
 }
 .card:nth-child(3):before {
-	background-image: url(images/IMG_5298.jpg);
+	background-image: url(images/card3.jpg);
 }
 .card:nth-child(4):before {
-	background-image: url(images/estate.jpg);
+	background-image: url(images/card4.jpg);
 }
 .content {
 	position: relative;
@@ -197,13 +193,8 @@
 
 @media (max-width: 1180px){
 	.home-2 {
-		height: 320px;
+		height: 500px;
 	}
-
-	.estate-title {
-		max-width: 4em;
-	}
-
 	.about-it-container{
 		display: none;
 	}
@@ -216,7 +207,7 @@
 		background-position: center top;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-image: url(images/IMG_5298.jpg);
+		background-image: url(images/estate_sect1.jpg);
 		opacity: 0.50;
 		text-align: center;
 	  }
