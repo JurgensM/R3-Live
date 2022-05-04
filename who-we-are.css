@@ -112,6 +112,10 @@
 		text-align: center;
 	  }
 
+	  .about-it-container-3{
+		display: none;
+	}
+
 	  	.estate-mobile-3{
         display: flex;
         align-items: center;
