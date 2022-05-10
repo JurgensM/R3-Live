@@ -745,7 +745,7 @@ button {
 background: black;
 }
 .btn-5:hover {
-  color: #f0094a;
+  color: white;
   background: transparent;
    box-shadow:none;
 }
