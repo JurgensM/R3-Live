@@ -136,7 +136,7 @@ body {
 .home {
   width: 100%;
   height: 100vh;
-  background-image: url(images/copertina4.jpg);
+  background-image: url(images/homepics/copertina4.jpg);
   background-position: center top;
   background-size:cover;
 }
@@ -464,16 +464,15 @@ svg {
 }
 
 /* social icons color when hover */
-.social-icons a.facebook:hover
-{
+.social-icons a.facebook:hover {
   background-color:#790405
 }
-.social-icons a.twitter:hover
-{
+
+.social-icons a.instagram:hover {
   background-color:#B18904
 }
-.social-icons a.linkedin:hover
-{
+
+.social-icons a.linkedin:hover {
   background-color:#343567;
 }
 
@@ -487,6 +486,10 @@ svg {
   place-items: center;
   color: #ffffff;
   font-family: 'Lato', sans-serif;
+}
+
+.frame-1 {
+  display: none;
 }
 
 /***************************************************************************/
@@ -531,6 +534,8 @@ svg {
   #logo-white {
     width: 30%;
   }
+
+ 
 
   /* hamburger menù and bars */
   .hamburger {
@@ -596,6 +601,10 @@ svg {
     display: none;
   }
 
+  .frame-1 {
+    display: block;
+  }
+
   .estate-mobile{
     visibility: visible;
     position: absolute;
@@ -604,7 +613,7 @@ svg {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/estate_box.jpg);
+    background-image: url(images/homepics/estate_box.jpg);
     opacity: 0.50;
   }
 
@@ -616,7 +625,7 @@ svg {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/concierge_box.jpg);
+    background-image: url(images/homepics/concierge_box.jpg);
     opacity: 0.50;
   }
 
@@ -628,7 +637,7 @@ svg {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/renovations_box.jpg);
+    background-image: url(images/homepics/renovations_box.jpg);
     opacity: 0.50;
   }
 
@@ -665,7 +674,7 @@ svg {
   .social-icons a.facebook {
     background-color:#790405
   }
-  .social-icons a.twitter {
+  .social-icons a.instagram {
     background-color:#B18904
   }
   .social-icons a.linkedin {
@@ -701,4 +710,75 @@ svg {
   #logo-foot{
     width: 50%;
   }
+}
+
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+
+/* 5 */
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: black;
+background: black;
+}
+.btn-5:hover {
+  color: #f0094a;
+  background: transparent;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f0094a;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.btn-5 a {
+  text-decoration: none;
+  color: white;
 }
