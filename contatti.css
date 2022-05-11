@@ -14,7 +14,7 @@ body {
 	justify-content: center;
 	align-items: flex-start;
 	background: #f2f2f2;
-    background-image: url(images/contatti.jpg);
+    background-image: url(images/contatti/contact.jpg);
     background-size: cover;
 }
 
@@ -34,7 +34,7 @@ body {
 }
  
 .contact-form .first-container {
-	background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/contatti.jpg") center center / cover no-repeat;
+	background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/contatti/contact.jpg") center center / cover no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -81,17 +81,17 @@ body {
 	flex-direction: column;
 }
 
-.contact-form .second-container form .form-group {
+.contact-form .second-container form .col {
 	margin-bottom: 10px;
 }
 
-.contact-form .second-container form .form-group * {
+.contact-form .second-container form .col * {
 	min-height: 55px;
 	border: 1px solid #e6e6e6;
 	padding: 0 20px;
 }
 
-.contact-form .second-container form .form-group label {
+.contact-form .second-container form .col label {
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -102,22 +102,22 @@ body {
 	margin-top: -1px;
 }
  
-.contact-form .second-container form .form-group:first-of-type input {
+.contact-form .second-container form .col:first-of-type input {
 	width: 50.1%;
 	margin-right: -5px;
 }
  
-.contact-form .second-container form .form-group input {
+.contact-form .second-container form .col input {
 	width: 100%;
 	font-size: 15px;
 	margin-top: -2px;
 }
  
-.contact-form .second-container form .form-group input::placeholder, .contact-form .second-container form .form-group textarea::placeholder {
+.contact-form .second-container form .col input::placeholder, .contact-form .second-container form .col textarea::placeholder {
 	color: #999;
 }
  
-.contact-form .second-container form .form-group textarea {
+.contact-form .second-container form .col textarea {
 	width: 100%;
 	min-height: 80px;
 	resize: none;
@@ -155,6 +155,13 @@ body {
 
 .linea {
 	display: none;
+}
+
+#message-textarea {
+	width: 100%;
+	height: 7rem;
+	font-size: 15px;
+	padding: 2%;
 }
 
 @media screen and (max-width: 800px) {

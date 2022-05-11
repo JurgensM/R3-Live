@@ -7,9 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contatti</title>
     <link rel="icon" href="images/white.ico" type="image/icon type">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contatti.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Contatti</title>
 </head>
 
 <body>
@@ -24,7 +23,7 @@
         <div class="logo">
             <a href="index.html" class="item-logo">
                 <img id="logo" src="images/logo_colori.png" alt="Logo">
-                <img id="logo-white" src="images/logo_bianco.png" alt="Logo">
+                <img id="logo-white" src="images/pittogramma_bianco.png" alt="Logo">
             </a>
         </div>
         <div class="linea">
@@ -34,7 +33,7 @@
         <a href="renovations.html" class="item">RENOVATIONS</a>
         <a href="vlog.html" class="item">VLOG</a>
         <a href="who-we-are.html" class="item">CHI SIAMO</a>
-        <a href="contact.html" class="item">CONTATTI</a>
+        <a href="contatti.html" class="item">CONTATTI</a>
         
     </div>
         
@@ -68,30 +67,39 @@
         </div>
         <div class="second-container">
             <h2>Send Us A Message</h2>
-           
-            <form target="_blank" action="https://formsubmit.co/jurgens.marpali@gmail.com" method="POST">
+            <div class="buttons">
+                <input type="radio" id="huey" name="drone" value="huey"
+                       checked>
+                <label class="choice" for="huey">Estate</label>
+
+                <input type="radio" id="dewey" name="drone" value="dewey">
+                <label class="choice" for="dewey">Concierge</label>
+
+                <input type="radio" id="louie" name="drone" value="louie">
+                <label for="louie">Renovations</label>
+            </div>
+            <form target="_blank" action="https://formsubmit.co/edoardogamurrini@gmail.com" method="POST">
                 <div class="form-group">
-                  <div class="form-row">
-                    <div class="col">
-                      <input type="text" name="name" id="name-input" placeholder="Full Name" required>
+                    <div class="form-row">
+                        <div class="col">
+                            <input id="name-input" class="form-control" name="name" type="text" placeholder="First name*" required/><input id="name-input" class="form-control" name="surname" type="text" placeholder="Last name*" required/>
+                        </div>
+                         <div class="col">
+                            <input id="email-input" class="form-control" name="email" type="email" placeholder="Email*" required/>
+                        </div>
+                        <div class="col">
+                            <input id="phone-input" class="form-control" name="phone" type="text" placeholder="Phone Number*" required/>
+                        </div>
                     </div>
-                    <div class="col">
-                        <input type="text" name="phone" id="phone-input" placeholder="Phone" required>
-                      </div>
-                    <div class="col">
-                      <input type="email" name="email" id="mail-input" placeholder="Email Address" required>
-                    </div>
-                  </div>
                 </div>
                 <div class="form-group">
-                  <textarea placeholder="Your Message" id="message-textarea" name="message" rows="10" required></textarea>
+                    <textarea id="message-textarea" name="message" class="form-control" placeholder="Write here your message" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-              </form>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Send message</button>
+            </form>
         </div>
     </div>
 
-   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
     <script src="index.js"></script>

@@ -13,8 +13,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 83vh;
-    background-image: url(images/vlog.jpg);
+    height: 100vh;
+    background-image: url(images/copertina_vlog.jpg);
     background-position: center top;
     background-size:cover;
     text-align: center;
@@ -84,4 +84,14 @@
     color: white;
     text-align: center;
     font-size: 20px;
+}
+
+/***************************************************************************/
+/*                                  MEDIA FOR 1180PX                       */
+/***************************************************************************/
+@media (max-width: 1180px){
+	/* cover image responsive */
+	.home-6 {
+		height: 500px;
+	}
 }
