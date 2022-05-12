@@ -29,6 +29,10 @@
     background-color: rgba(0, 0, 0, .7);
 }
 
+.video-section-1 {
+    height: 90vh;
+}
+
 
 
 .iframe-container-1 {
@@ -49,14 +53,21 @@
 }
 
 .video-desc-1 {
-    padding-top: 5%;
+    padding-top: 7%;
     font-family: 'Lato', sans-serif;
     color: white;
     text-align: center;
     font-size: 20px;
 }
 
+
 .video-paragraph-1 {
+    font-size: 17px;
+}
+
+.video-paragraph-2 {
+    position: relative;
+    padding-top: 4em;
     font-size: 17px;
 }
 
@@ -64,8 +75,9 @@
 .iframe-container-2 {
     position: relative;
     align-items: center;
+    
     width: 80%;
-    padding-bottom: 56.25%;
+    padding-bottom: 43%;
     height: 0;
 }
 
@@ -79,13 +91,12 @@
 }
 
 .video-desc-2 {
-    padding-top: 5%;
+    margin-top: 10%;
     font-family: 'Lato', sans-serif;
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 10px;
 }
-
 
 /***************************************************************************/
 /*                                  MEDIA FOR 1180PX                       */
