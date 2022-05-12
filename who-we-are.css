@@ -148,6 +148,10 @@
     }
 }
 
+.section-1 {
+	height: 70vh;
+}
+
 .iframe-container-1 {
     position: relative;
     align-items: center;
