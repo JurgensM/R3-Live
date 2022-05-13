@@ -496,6 +496,11 @@
 	color: var(--btntext-color);
    
   }
+
+.ghost-btn a {
+	text-decoration: none;
+	color: #000;
+}
   
   @media screen and (min-width:600px) {
 	
@@ -510,3 +515,5 @@
 		display: none;
 	}
 }
+
+
