@@ -141,15 +141,44 @@ $(function() {
 
 
 //buttons planimerty
-function pictureCucina()
-{
-document.getElementById("right").src="images/Pontresina/cucina.jpg";
+function pictureCucina(){
+  setTimeout(function() {
+    document.getElementById("right").src="images/Pontresina/cucina1.jpg";
+  });
 }
+
+// function (pictureCucina()
+// {
+// document.getElementById("right").src="images/Pontresina/cucina1.jpg";
+// },1000);
 
 function pictureBagno()
 {
-document.getElementById("right").src="images/Pontresina/bagnores.jpg";
+document.getElementById("right").src="images/Pontresina/bagno.jpg";
 }
+
+function pictureBedroom1()
+{
+document.getElementById("right").src="images/Pontresina/camera.jpg";
+}
+
+function pictureBedroom2()
+{
+document.getElementById("right").src="images/Pontresina/cameramat.jpg";
+}
+
+function pictureSala()
+{
+document.getElementById("right").src="images/Pontresina/sala.jpg";
+}
+
+
+
+
+
+
+
+
 // year counter in footer 2
 const year = document.getElementById("actualYear");
 const actualYear = new Date();
@@ -179,4 +208,24 @@ function nextImage() {
 
   // slideshowImages[currentImageCounter].style.display = "block";
   slideshowImages[currentImageCounter].style.opacity = 1;
+}
+
+const slideshowImages1 = document.querySelectorAll(".intro-slideshow2 img");
+
+const nextImageDelay1 = 3000;
+let currentImageCounter1 = 0; // setting a variable to keep track of the current image (slide)
+
+// slideshowImages[currentImageCounter].style.display = "block";
+slideshowImages1[currentImageCounter1].style.opacity = 1;
+
+setInterval(nextImage1, nextImageDelay1);
+
+function nextImage1() {
+  // slideshowImages[currentImageCounter].style.display = "none";
+  slideshowImages1[currentImageCounter1].style.opacity = 0;
+
+  currentImageCounter1 = (currentImageCounter1+1) % slideshowImages1.length;
+
+  // slideshowImages[currentImageCounter].style.display = "block";
+  slideshowImages1[currentImageCounter1].style.opacity = 1;
 }
