@@ -260,6 +260,7 @@
 }
 
 .gallery-container img{
+	margin-left: 5%;
 	width: 20em;
 	object-fit: cover;
 	object-position: 50% 50%;
@@ -271,6 +272,7 @@
 	}
 
 	.gallery-container img {
+		margin-left: 7%;
 		width: 10em;
 	}
 }
