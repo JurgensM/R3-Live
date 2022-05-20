@@ -243,10 +243,10 @@
 		position: absolute;
 		width: 100%;
 		height: 50vh;
-		background-position: center top;
+		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-image: url(images/EstConRen/concierge1.jpg);
+		background-image: url(images/campanello-robbia.png);
 		opacity: 0.50;
 		text-align: center;
 	}
