@@ -471,6 +471,17 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 		height: 2em;
 		top: 1.3em;
 	}
+
+	.box-mobile h1{
+		position: relative;
+		font-size: 13px;
+		top: -8em;
+	  }
+	  .box-mobile p {
+		position: relative;
+		font-size: 13px;
+		top: -8em;
+	  }
 }
 
 .details {
@@ -479,8 +490,9 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 	text-align: center;
 	
 }
-
-
+.details ul {
+	 padding-left: 0;
+ }
 
 
 
