@@ -472,4 +472,10 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 	}
 }
 
+.details {
+	font-family: 'Lato', sans-serif;
+	color: white;
+	text-align: center;
+}
+
 /***********************************************/
