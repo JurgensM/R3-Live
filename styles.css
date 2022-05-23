@@ -752,7 +752,9 @@ svg {
 }
 
 button {
-  margin: 20px;
+  margin-bottom: 4.5em;
+  margin-left: 1.5em;
+  /* margin: 20px; */
 }
 .custom-btn {
   width: 130px;
@@ -783,7 +785,7 @@ button {
   padding: 0;
   border: none;
   background: black;
-background: black;
+  background: black;
 }
 .btn-5:hover {
   color: #fff;
