@@ -190,9 +190,9 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
 
 	.why-us {
-		font-size: 16px;
+		font-size: 13px;
 	}
 }
