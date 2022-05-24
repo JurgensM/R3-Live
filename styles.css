@@ -200,7 +200,7 @@ body {
   position: relative;
   top: 4em;
   font-family: 'Lato', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   color: white;
   text-align: center;
   max-width: 55rem;
@@ -756,6 +756,7 @@ button {
   margin-left: 1.5em;
   /* margin: 20px; */
 }
+
 .custom-btn {
   width: 130px;
   height: 40px;
@@ -785,7 +786,7 @@ button {
   padding: 0;
   border: none;
   background: black;
-  background: black;
+background: black;
 }
 .btn-5:hover {
   color: #fff;
@@ -825,7 +826,6 @@ button {
 }
 
 .btn-6 {
-  margin-bottom: 4em;
   width: 130px;
   height: 40px;
   line-height: 42px;
@@ -901,6 +901,16 @@ top: 250px;
   .intro-slideshow {
    visibility: hidden;
   }
+}
 
-  
+.btn-6 {
+  margin-bottom: 4em;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: #790405;
+background: #790405;
+top: 250px;
 }
