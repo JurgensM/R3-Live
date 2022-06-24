@@ -372,6 +372,7 @@ body {
   color: #fff;
   opacity: .5;
   font-family: 'Lato';
+  font-style: italic;
 }
 
 .slider__txt {
@@ -747,7 +748,11 @@ svg {
   }
   /*buttons*/
   .custom-btn {
-    bottom: 20px;
+    bottom: 15px;
+  }
+
+  .background-logo{
+    height: 60rem;
   }
 }
 
