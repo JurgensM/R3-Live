@@ -108,7 +108,7 @@
                         <a class="wc" href="#j" onclick="pictureBagno()"><b>WC</b></a>
                         <a class="wc2" href="#j" onclick="pictureBagno1()"><b>WC</b></a>
                         <a class="bedroom3" href="#i" onclick="pictureBedroom3()"><b>Bedroom</b></a>
-                        <a class="terrace" href="#a" onclick="pictureTerrace()"><b>Terrace</b></a>
+                        <a class="terrace" href="#a" onclick="pictureBalcony()"><b>Terrace</b></a>
                     </nav>
                 </section>
                 <section class="right">
@@ -389,6 +389,54 @@
            swiper: swiper,
          },
        });
+
+       //buttons planimerty
+       function pictureCucina(){
+          setTimeout(function() {
+            document.getElementById("right").src="images/Samedan/cucina.jpg";
+          });
+        }
+
+        // function (pictureCucina()
+        // {
+        // document.getElementById("right").src="images/Pontresina/cucina1.jpg";
+        // },1000);
+
+        function pictureBagno()
+        {
+        document.getElementById("right").src="images/Samedan/bagno2.jpg";
+        }
+
+        function pictureBagno1()
+        {
+        document.getElementById("right").src="images/Samedan/bagno1.jpg";
+        }
+
+        function pictureBedroom1()
+        {
+        document.getElementById("right").src="images/Samedan/cameramat.jpg";
+        }
+
+        function pictureBedroom2()
+        {
+        document.getElementById("right").src="images/Samedan/camera.jpg";
+        }
+
+        function pictureBedroom3()
+        {
+        document.getElementById("right").src="images/Samedan/cameramat1.jpg";
+        }
+
+        function pictureSala()
+        {
+        document.getElementById("right").src="images/Samedan/sala1.jpg";
+        }
+
+        
+        function pictureBalcony()
+        {
+        document.getElementById("right").src="images/Samedan/balcony.jpg";
+        }
      </script>
 </body>
 
