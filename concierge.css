@@ -361,3 +361,39 @@
 		font-size: 12px;
 	}
 }
+
+.slideshoww-containers {
+	position: relative;
+	background-image: url(images/recensioni.png);
+	margin-top: 100px;
+  }
+  
+  
+.Slidesmy {
+	display: none;
+	padding: 15%;
+	text-align: center;
+}
+  
+  
+q {
+	font-family: "Lato", sans-serif;
+	color: #fff;
+	font-size: 22px;
+	font-style: italic;
+}
+  
+  
+.author8 {
+	font-family: "Lato", sans-serif;
+	color: grey;
+}
+  
+.quote {
+	font-family: 'Lato';
+	font-size: 100px;
+	color: #B18904;
+	position: absolute;
+	top: 10%;
+	left: 49%;
+}
