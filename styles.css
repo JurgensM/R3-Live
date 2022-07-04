@@ -951,7 +951,7 @@ q {
   color: grey;
 }
 
-.quote {
+quote {
   font-family: 'Lato';
   font-size: 100px;
   color: #B18904;
@@ -959,3 +959,4 @@ q {
   top: 10%;
   left: 49%;
 }
+

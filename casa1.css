@@ -373,20 +373,20 @@ span.d3 {
 
 .slides {
     padding: 0;
-    width: 70em;
+    width: 30em;
     height: 45em;
     display: block;
     margin: 0 auto;
     position: relative;
-	bottom: 7em;
+	bottom: 9em;
 }
 
 @media (max-width: 1120px){
 	.slides {
 		padding: 0;
-		width: 45em;
+		width: 25em;
 		
-		height: 30em;
+		height: 35em;
 		display: block;
 		margin: 0 auto;
 		position: relative;
@@ -498,7 +498,9 @@ input#img-1:checked ~ .nav-dots label#img-dot-1,
 input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4,
-input#img-5:checked ~ .nav-dots label#img-dot-5 {
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-5:checked ~ .nav-dots label#img-dot-6,
+input#img-5:checked ~ .nav-dots label#img-dot-7  {
 	background: rgba(0, 0, 0, 0.8);
 }
 
@@ -529,7 +531,7 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 
 
 
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
 	.slides {
 		width: 20em;
 		height: 15em;
@@ -543,7 +545,7 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 	}
 
 
-}
+} */
 
 @media (max-width: 400px) {
 
@@ -572,3 +574,4 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 .details ul{
 	padding-left: 0;
 }
+
