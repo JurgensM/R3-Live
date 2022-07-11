@@ -61,7 +61,7 @@
 .about-it-desc {
 	position: relative;
 	top: 3em;
-	text-align: center;
+	text-align: justify;
 	font-family: 'Lato', sans-serif;
 	font-size: 15px;
 	max-width: 25em;
@@ -546,6 +546,7 @@ input#img-9:checked ~ .nav-dots label#img-dot-9{
         position: relative;
         font-size: 15px;
         top: -5em;
+		text-align: justify;
       }
 
 }
