@@ -515,6 +515,7 @@ input#img-5:checked ~ .nav-dots label#img-dot-7  {
         position: relative;
         font-size: 19px;
         top: -5em;
+		text-align: center;
       }
       .box-mobile p {
         position: relative;

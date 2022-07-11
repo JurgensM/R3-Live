@@ -562,12 +562,12 @@ input#img-7:checked ~ .nav-dots label#img-dot-7 {
 	.box-mobile h1{
         position: relative;
         font-size: 17px;
-        top: -5em;
+        top: -8em;
       }
       .box-mobile p {
         position: relative;
         font-size: 12px;
-        top: -5em;
+        top: -10em;
       }
 }
 
