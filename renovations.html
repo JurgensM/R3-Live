@@ -50,7 +50,7 @@
             </div>
             <div class="description-image">
                 <div class="about-it-img">
-                    <img src="images/EstConRen/renovations1.jpg" alt="estate" class="about-it-image">
+                    <img src="images/EstConRen/falegname.JPG" alt="estate" class="about-it-image">
                 </div>
                 <div class="about-it-desc">
                     <p style="color: white;">Ci occupiamo di ristrutturazioni mirate, parziali e totali. Niente viene lasciato al caso: collaboriamo con personale esperto nel settore e con validi consulenti per tutti gli ambiti, dalla progettazione all'arredamento. Ti assegneremo una persona di fiducia che seguirà e coordinerà i lavori e organizzeremo degli incontri con il personale incaricato che seguirà e gestirà l'evoluzione della ristrutturazione</p>
@@ -64,7 +64,7 @@
         <div class="box-phone">
             <h1 class="h1-phone">IN COSA CONSISTE</h1>
             <p class="p-phone">
-                Ci occupiamo di <u>ristrutturazioni mirate, parziali e totali.</u><br>Niente viene lasciato al caso: collaboriamo con personale esperto nel settore e con validi consulenti per tutti gli ambiti, dalla progettazione all'arredamento. <br>Ti assegneremo una persona di fiducia che seguirà e coordinerà i lavori e organizzeremo degli incontri con il personale incaricato che seguirà e gestirà l'evoluzione della ristrutturazione
+                Ci occupiamo di ristrutturazioni mirate, parziali e totali.<br>Niente viene lasciato al caso: collaboriamo con personale esperto nel settore e con validi consulenti per tutti gli ambiti, dalla progettazione all'arredamento. <br>Ti assegneremo una persona di fiducia che seguirà e coordinerà i lavori e organizzeremo degli incontri con il personale incaricato che seguirà e gestirà l'evoluzione della ristrutturazione
             </p>        
         </div>
         
@@ -129,15 +129,41 @@
             <h1 class="font thinked" style="color: aliceblue;">LE NOSTRE RISTRUTTURAZIONI</h1>
         </div>
 
+
+
+
+        <section class="sect-befaft">
+            <div id="page">
+                <div class="wrapper">
+                  <div class="before">
+                    <img class="content-image" src="images/renovations/Primadopo-1.jpg" draggable="false"/>   </div>
+                  <div class="after">
+                    <img class="content-image" src="images/renovations/Primadopo-2.jpg" draggable="false"/>
+                  </div>
+                  <div class="scroller">
+                    <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50" style="fill:#fff"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#fff"/></svg>
+                  </div>
+                </div>
+                </div>
+    
+        </section>
+
+
+
+
+
+
         <div class="image-grid">
             <div class="image-row">
               <div class="image image-01"></div>  
-              <div class="image image-02"></div>  
               <div class="image image-03"></div>  
+              
+              
             </div> 
               <div class="image-row">
+                <div class="image image-02"></div>
               <div class="image image-04"></div>   
-              <div class="image image-05"></div>  
+              <!-- <div class="image image-05"></div>   -->
             </div> 
 
           </div> 
@@ -204,6 +230,65 @@
     </section>
 
 
+    <script>
+        let active = false;
+
+// First we'll have to set up our event listeners
+// We want to watch for clicks on our scroller
+document.querySelector('.scroller').addEventListener('mousedown',function(){
+  active = true;
+  // Add our scrolling class so the scroller has full opacity while active
+  document.querySelector('.scroller').classList.add('scrolling');
+});
+// We also want to watch the body for changes to the state,
+// like moving around and releasing the click
+// so let's set up our event listeners
+document.body.addEventListener('mouseup',function(){
+  active = false;
+  document.querySelector('.scroller').classList.remove('scrolling');
+});
+document.body.addEventListener('mouseleave',function(){
+  active = false;
+  document.querySelector('.scroller').classList.remove('scrolling');
+});
+
+// Let's figure out where their mouse is at
+document.body.addEventListener('mousemove',function(e){
+  if (!active) return;
+  // Their mouse is here...
+  let x = e.pageX;
+  // but we want it relative to our wrapper
+  x -= document.querySelector('.wrapper').getBoundingClientRect().left;
+  // Okay let's change our state
+  scrollIt(x);
+});
+
+// Let's use this function
+function scrollIt(x){
+    let transform = Math.max(0,(Math.min(x,document.querySelector('.wrapper').offsetWidth)));
+    document.querySelector('.after').style.width = transform+"px";
+    document.querySelector('.scroller').style.left = transform-25+"px";
+}
+
+// Let's set our opening state based off the width, 
+// we want to show a bit of both images so the user can see what's going on
+scrollIt(150);
+
+// And finally let's repeat the process for touch events
+// first our middle scroller...
+document.querySelector('.scroller').addEventListener('touchstart',function(){
+  active = true;
+  document.querySelector('.scroller').classList.add('scrolling');
+});
+document.body.addEventListener('touchend',function(){
+  active = false;
+  document.querySelector('.scroller').classList.remove('scrolling');
+});
+document.body.addEventListener('touchcancel',function(){
+  active = false;
+  document.querySelector('.scroller').classList.remove('scrolling');
+});
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
